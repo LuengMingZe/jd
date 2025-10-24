@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅游景点导航</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+        }
+        
+        body {
+            width: 340px;
+            background: linear-gradient(180deg, #2c3e50, #4a6491);
+            color: white;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .logo {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+        
+        .subtitle {
+            font-size: 0.85rem;
+            opacity: 0.8;
+        }
+        
+        .nav-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            margin-bottom: 15px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: white;
+        }
+        
+        .nav-item:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: translateX(5px);
+        }
+        
+        .icon {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-right: 15px;
+            font-size: 1.2rem;
+        }
+        
+        .mountain .icon {
+            background-color: #27ae60;
+        }
+        
+        .sea .icon {
+            background-color: #3498db;
+        }
+        
+        .desert .icon {
+            background-color: #e67e22;
+        }
+        
+        .city .icon {
+            background-color: #9b59b6;
+        }
+        
+        .nav-text h3 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+        
+        .nav-text p {
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+        
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 0.8rem;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <h1>旅游景点导航</h1>
+        <p class="subtitle">探索世界各地的自然与人文景观</p>
+    </div>
+    
+    <a href="https://zhuanlan.zhihu.com/p/624301096" target="_blank" class="nav-item mountain">
+        <div class="icon">⛰️</div>
+        <div class="nav-text">
+            <h3>爬山推荐</h3>
+            <p>探索壮丽山峰与自然奇观</p>
+        </div>
+    </a>
+    
+    <a href="https://www.bijingdi.com/news/2246.html" target="_blank" class="nav-item sea">
+        <div class="icon">🌊</div>
+        <div class="nav-text">
+            <h3>看海推荐</h3>
+            <p>欣赏美丽海岸线与海洋风光</p>
+        </div>
+    </a>
+    
+    <a href="https://www.sohu.com/a/644179485_120138032" target="_blank" class="nav-item desert">
+        <div class="icon">🏜️</div>
+        <div class="nav-text">
+            <h3>沙漠推荐</h3>
+            <p>体验广袤沙漠与独特文化</p>
+        </div>
+    </a>
+    
+    <a href="https://www.thechinajourney.com/zh_cn/%E4%B8%AD%E5%9B%BD%E6%9C%80%E5%80%BC%E5%BE%97%E6%B8%B8%E8%A7%88%E7%9A%84%E5%9F%8E%E5%B8%82/" target="_blank" class="nav-item city">
+        <div class="icon">🏙️</div>
+        <div class="nav-text">
+            <h3>大城市推荐</h3>
+            <p>感受现代都市的繁华与活力</p>
+        </div>
+    </a>
+    
+    <div class="footer">
+        <p>旅游景点导航 &copy; 2023</p>
+    </div>
+</body>
+</html>
